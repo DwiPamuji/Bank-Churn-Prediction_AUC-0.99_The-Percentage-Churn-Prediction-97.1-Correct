@@ -185,6 +185,12 @@ Of the 7 models tested, the 3 best models is :
 |2. | **Gradient Boost Classifier** | 0.887280	 | 0.987409 |
 |3. | **Random Forest Classifier** | 0.858483 | 0.985179 |
 
+# **Hyperparameter Tuning Best Models (XGBoost)**
 
+**XGBoost is eXtream Gradient Boosting is a specific implementation of the Gradient Boosting Model which uses more accurate approximations to find the best tree model**. XGBoost specifically used a more regularized model formalization to control overfitting, which gives it better perfomance.
 
+**How XGBoost Works?**
 
+![image.png](attachment:06b2546b-08e5-492c-8264-4643c8784877.png)
+
+Source : https://algotech.netlify.app/blog/xgboost/
