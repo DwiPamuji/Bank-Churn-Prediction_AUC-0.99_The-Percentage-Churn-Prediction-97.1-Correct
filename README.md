@@ -206,10 +206,13 @@ Best_params: {'model__subsample': 0.4, 'model__reg_alpha': 0.1668100537200059, '
 ## **Best Model**
 > XGBClassifier(eval_metric='auc', random_state = 2022)
 **ROC AUC Curve**
+
 <img src="Best Model 1 - ROC AUC Curve.jpg" alt="ROC AUC Curve"/>
 
 **Compare XGBoost Predict and Actual**
+
 <img src="Best Model 2 - Compare XGBoost predict with Actual.jpg" alt="Compare xgb predict with actual"/>
+
 <font size = "4"> Percentage Machine Learning Predict Churn :
 Correct 97.1%
 Wrong 2.9%</font>
