@@ -199,11 +199,20 @@ Best_score: 0.9901088935933082
 Best_params: {'model__subsample': 0.4, 'model__reg_alpha': 0.1668100537200059, 'model__n_estimators': 214, 'model__max_depth': 24, 'model__learning_rate': 0.18, 'model__gamma': 3, 'model__colsample_bytree': 1.0}
 
 **Compare XGBoost Before Tuning and After Tuning**
-<img src="assets/Hyperparameter 1 - XGBoost Work.jpg" alt="XGBoost Works"/>
+<img src="assets/Hyperparameter 2 - Compare Before and After Tuning.jpg" alt="XGBoost Works"/>
 
 **XGBoost After Hyperparameter Tuning have lower than XGBoost before tuning, for next we will use XGBoost Before Tuning | XGBClassifier(eval_metric='auc', random_state = 2022)**
 
 ## **Best Model**
 > XGBClassifier(eval_metric='auc', random_state = 2022)
+**ROC AUC Curve**
+<img src="Best Model 1 - ROC AUC Curve.jpg" alt="ROC AUC Curve"/>
+
+**Compare XGBoost Predict and Actual**
+<img src="Best Model 2 - Compare XGBoost predict with Actual.jpg" alt="Compare xgb predict with actual"/>
+<font size = "4"> Percentage Machine Learning Predict Churn :
+Correct 97.1%
+Wrong 2.9%</font>
+
 
 
