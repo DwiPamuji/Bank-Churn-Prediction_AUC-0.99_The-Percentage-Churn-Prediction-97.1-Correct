@@ -1,4 +1,4 @@
-# **Bank Churn Prediction (AUC = 0.99) | Percentage 97.1% Correct**
+# **Bank Churn Prediction (AUC = 0.99) | The Percentage Churn Prediction 97.1% Correct**
 ---
 by [Dwi Pamuji Bagaskara](https://github.com/DwiPamuji)
 
