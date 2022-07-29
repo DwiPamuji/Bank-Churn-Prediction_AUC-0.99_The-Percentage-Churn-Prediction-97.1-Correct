@@ -13,12 +13,12 @@ by [Dwi Pamuji Bagaskara](https://github.com/DwiPamuji)
 1. [Exploratory Data Analysis](#exploratory-data-analysis)
 1. [Data Preprocessing](#data-preprocessing)
 1. [Modeling and Evaluation](#modeling-and-evaluation)
-1. [Hyperparameter Tuning](#hyperparameter-tuning)
-1. [Compare Model Predict VS Actual](#compare-model-predict-vs-actual)
+1. [Hyperparameter Tuning Best Models (XGBoost)](#hyperparameter-tuning-best-models-(XGBoost))
+1. [Compare Model Predict and Actual](#compare-model-predict-and-actual)
 1. [Test Machine Learning](#test-machine-learning)
-1. [Conclution](#conclution)
+1. [Conclusion](#conclusion)
 
-# <a id="business-problem-understanding">Business Problem Understanding</a> 
+# <a id="business-problem-understanding">**Business Problem Understanding**</a> 
 ---
 ## **Context**
 
@@ -122,6 +122,7 @@ we will keep outlier because we asume there is social inequality
 in this case not have missing value
 
 # <a id="Modeling and Evaluation">Modeling and Evaluation</a>
+---
 ## **Confusion Metric**
 
 **Confusion Matrix** is a performance measurement for the machine learning classification problems where the output can be two or more classes. It is a table with combinations of predicted and actual values. A confusion matrix is defined as thetable that is often used to describe the performance of a classification model on a set of the test data for which the true values are known.
@@ -185,7 +186,8 @@ Of the 7 models tested, the 3 best models is :
 |2. | **Gradient Boost Classifier** | 0.887280	 | 0.987409 |
 |3. | **Random Forest Classifier** | 0.858483 | 0.985179 |
 
-# **Hyperparameter Tuning Best Models (XGBoost)**
+# <a id="hyperparameter-tuning-best-models-(XGBoost)">Hyperparameter Tuning Best Models (XGBoost)</a> 
+---
 
 **XGBoost is eXtream Gradient Boosting is a specific implementation of the Gradient Boosting Model which uses more accurate approximations to find the best tree model**. XGBoost specifically used a more regularized model formalization to control overfitting, which gives it better perfomance.
 
@@ -207,15 +209,20 @@ Best_params: {'model__subsample': 0.4, 'model__reg_alpha': 0.1668100537200059, '
 > XGBClassifier(eval_metric='auc', random_state = 2022)
 **ROC AUC Curve**
 
-<img src="Best Model 1 - ROC AUC Curve.jpg" alt="ROC AUC Curve"/>
+<img src="assets/Best Model 1 - ROC AUC Curve.jpg" alt="ROC AUC Curve"/>
 
-**Compare XGBoost Predict and Actual**
+# <a id="compare-model-predict-and-actual">**Compare XGBoost Predict and Actual**</a> 
+---
 
-<img src="Best Model 2 - Compare XGBoost predict with Actual.jpg" alt="Compare xgb predict with actual"/>
+<img src="assets/Best Model 2 - Compare XGBoost predict with Actual.jpg" alt="Compare xgb predict with actual"/>
 
-<font size = "4"> Percentage Machine Learning Predict Churn :
+<font size = "5"> **Percentage Machine Learning Predict Churn :
 Correct 97.1%
-Wrong 2.9%</font>
+Wrong 2.9%**</font>
 
+# <a id="conclusion">**Conclusion**</a> 
+---
 
+<font size="10">With this machine learning, bank companies can **predict which customers will stay and will churn**, with **the percentage of wrong is only 2.9% and correct is 97.1%**.</font>
 
+<font size="10">**By knowing which customers will churn, we can provide promotions so that customers do not churn or move to another bank**</font>
