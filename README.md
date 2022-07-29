@@ -191,6 +191,19 @@ Of the 7 models tested, the 3 best models is :
 
 **How XGBoost Works?**
 
-![image.png](attachment:06b2546b-08e5-492c-8264-4643c8784877.png)
-
+<img src="assets/Hyperparameter 1 - XGBoost Work.jpg" alt="XGBoost Works"/>
 Source : https://algotech.netlify.app/blog/xgboost/
+
+**XGBoost After Tuning**
+Best_score: 0.9901088935933082
+Best_params: {'model__subsample': 0.4, 'model__reg_alpha': 0.1668100537200059, 'model__n_estimators': 214, 'model__max_depth': 24, 'model__learning_rate': 0.18, 'model__gamma': 3, 'model__colsample_bytree': 1.0}
+
+**Compare XGBoost Before Tuning and After Tuning**
+<img src="assets/Hyperparameter 1 - XGBoost Work.jpg" alt="XGBoost Works"/>
+
+**XGBoost After Hyperparameter Tuning have lower than XGBoost before tuning, for next we will use XGBoost Before Tuning | XGBClassifier(eval_metric='auc', random_state = 2022)**
+
+## **Best Model**
+> XGBClassifier(eval_metric='auc', random_state = 2022)
+
+
