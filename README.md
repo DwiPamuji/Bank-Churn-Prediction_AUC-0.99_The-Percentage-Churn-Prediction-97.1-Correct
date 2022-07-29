@@ -122,15 +122,68 @@ we will keep outlier because we asume there is social inequality
 in this case not have missing value
 
 # <a id="Modeling and Evaluation">Modeling and Evaluation</a>
+## **Confusion Metric**
 
+**Confusion Matrix** is a performance measurement for the machine learning classification problems where the output can be two or more classes. It is a table with combinations of predicted and actual values. A confusion matrix is defined as thetable that is often used to describe the performance of a classification model on a set of the test data for which the true values are known.
+<img src="assets/Modeling and Eval 1 - Confution Metric.jpg" alt="Confution Metric"/>
+For this case target is :
 
+0 : Existing Customer
 
+1 : Attrited Customer
 
+---
+True Positive: We predicted positive and it’s true. **We predicted that customer will churn** and actually **churn**.
+True Negative: We predicted negative and it’s true. **We predicted that customer is not churn** and actually **not churn**.
+False Positive (Type 1 Error)- We predicted positive and it’s false. **We predicted that customer will churn** and actually **not churn**.
+False Negative (Type 2 Error)- We predicted negative and it’s false. **We predicted that customer is not churn** and actually **churn**
 
+for this case we will use metric **F1-Score** cause we will fokus to recall and precision, and to strengthen analysis we will use **ROC/AUC** too, cause this data is imbalace that has large effect on PR but not ROC/AUC.
 
+## **Approaching Categorical Features**
 
+We will separate ordinal variable and nominal variable: 
 
+Ordinal Variable in this data:
+1. Income_Category
+1. Card_Category
+1. Education_Level
 
+Nominal Variable in this data:
+1. Gender
+1. Dependent_count
+1. Attrition_Flag
+1. Marital_Status
+
+## **Train Test Split**
+
+Processing Scheme :
+
+1. Target : Attrition_Flag
+1. Standard Scaller : Customer_Age, Months_on_book, Total_Revolving_Bal, Total_Amt_Chng_Q4_Q1, Total_Ct_Chng_Q4_Q1, Total_Trans_Ct
+1. Robust Scaller : Credit_Limit, Avg_Open_To_Buy, Total_Trans_Amt, Avg_Utilization_Ratio
+1. Out : CLIENTNUM
+
+## **Modeling**
+
+We will compare 7 Model :
+1. **Logistic Regression**
+2. **K Nearest Neighbors Classifier**
+3. **Decision Tree Classifier**
+4. **Random Forest Classifier**
+5. **AdaBoost Classifier**
+6. **Gradient Boosting Classifier**
+7. **XGBoost Classifier**
+
+<img src="assets/Modeling and Eval 2 - Model Benchmark.jpg" alt="Model Benchmark"/>
+
+Of the 7 models tested, the 3 best models is :
+
+|No | Model | f1 score mean | roc/auc Mean |
+| --- | --- | --- | --- |
+|1. | **XGBoost Classifier** | 0.898873 | 0.990857 |
+|2. | **Gradient Boost Classifier** | 0.887280	 | 0.987409 |
+|3. | **Random Forest Classifier** | 0.858483 | 0.985179 |
 
 
 
